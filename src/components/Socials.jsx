@@ -10,17 +10,17 @@ const Socials = () => {
         <h2 className="text-center mb-4">Connect with Me</h2>
         <Row className="justify-content-center">
           <Col xs={4} sm={2} className="text-center mb-3">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/HusseinMelhem" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub size={40} />
             </a>
           </Col>
           <Col xs={4} sm={2} className="text-center mb-3">
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/husseinmelhem/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaLinkedin size={40} />
             </a>
           </Col>
           <Col xs={4} sm={2} className="text-center mb-3">
-            <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.instagram.com/hussien_melhem1/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaInstagram size={40} />
             </a>
           </Col>
