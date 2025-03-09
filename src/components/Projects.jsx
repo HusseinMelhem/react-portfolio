@@ -45,9 +45,12 @@ const projects = [
     link: 'https://github.com/HusseinMelhem/StudentManagementSystem-withMysqlImplementation'
   },
 ];
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
 const Projects = () => {
-  const visibleCount = 4;
+  const visibleCount = isMobileDevice() ? 2 : 4;
   const [currentIndex, setCurrentIndex] = useState(0);
   const maxIndex = projects.length - visibleCount; // Maximum left shift index
   const cardWidth = 100 / visibleCount; // Each card occupies a percentage width
