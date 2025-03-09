@@ -95,7 +95,7 @@ const Projects = () => {
                 >
                   <Card.Img
                     variant="top"
-                    src={`${import.meta.env.BASE_URL}${project.image}`}
+                    src={`https://github.com/HusseinMelhem/My-portfolio/blob/gh-pages/${project.image}`}
                     alt={project.title}
                   />
                   <Card.Body style={{ position: 'relative', paddingBottom: '70px' }}>
