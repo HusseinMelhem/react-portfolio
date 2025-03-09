@@ -1,0 +1,57 @@
+.side-navbar {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.side-navbar.closed {
+  transform: translate(-120%, -50%);
+}
+
+.side-navbar-item {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.progress-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.skill-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Main toggle arrow (always visible) */
+.mobile-toggle {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  text-align: center;
+  user-select: none;
+}
+
+/* Extra bottom toggle arrow (visible only on mobile when sidebar is closed) */
+.mobile-toggle-bottom {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1100;
+  color: white;
+  background: #1e1e1e;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
