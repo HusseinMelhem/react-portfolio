@@ -6,51 +6,48 @@ const projects = [
     title: 'ems-with-sprinboot-and-react',
     description:
       'A comprehensive Employee Management System implemented with Spring Boot on the backend and React on the frontend, offering streamlined employee data management and efficient communication.',
-    image: '/project1.png',
+    image: 'project1.png',
     link: 'https://github.com/HusseinMelhem/ems-with-sprinboot-and-react'
   },
   {
     title: 'FNM Mall',
     description:
       'A fully-featured eCommerce platform developed in Laravel, featuring an advanced checkout system, dynamic product filtering, secure authentication, and a robust admin panel for complete customization.',
-    image: '/fnm.png',
+    image: 'fnm.png',
     link: 'https://fnm-mall.com'
   },
   {
     title: 'Clothing Website',
     description:
       'An eCommerce clothing store built using PHP, offering a complete shopping cart, integrated admin dashboard, and advanced search capabilities optimized for seamless social media integration.',
-    image: '/dreamroom.png',
+    image: 'dreamroom.png',
     link: 'https://dreamroom.fnm-mall.com'
   },
   {
     title: 'Hotel Booking System',
     description:
       'A robust hotel booking system developed with JavaFX, MySQL, and Java multithreading, designed to streamline reservation management and enhance operational efficiency.',
-    image: '/hotelbooking.png',
+    image: 'hotelbooking.png',
     link: 'https://github.com/HusseinMelhem/HotelBookingSystem-JavaFX-MySQL-multithreading'
   },
   {
     title: 'Metal Company Ecommerce',
     description:
       'A showcase website for a metal trading company, featuring detailed product displays and a fully customizable admin panel for effortless content management.',
-    image: '/metalcompany.png',
+    image: 'metalcompany.png',
     link: 'https://mega-metal-international.com'
   },
   {
     title: 'Student Management System',
     description:
       'An integrated student management system that utilizes a secure database for storing student records. The platform offers dedicated login modules for administrators and students, ensuring streamlined access to academic and administrative functionalities.',
-    image: '/studentmanagment.png',
+    image: 'studentmanagment.png',
     link: 'https://github.com/HusseinMelhem/StudentManagementSystem-withMysqlImplementation'
   },
 ];
-function isMobileDevice() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
 
 const Projects = () => {
-  const visibleCount = isMobileDevice() ? 2 : 4;
+  const visibleCount = 4;
   const [currentIndex, setCurrentIndex] = useState(0);
   const maxIndex = projects.length - visibleCount; // Maximum left shift index
   const cardWidth = 100 / visibleCount; // Each card occupies a percentage width
@@ -59,7 +56,7 @@ const Projects = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex(prev => (prev >= maxIndex ? 0 : prev + 1));
-    }, 3800);
+    }, 4000);
     return () => clearInterval(timer);
   }, [maxIndex]);
 
@@ -96,7 +93,11 @@ const Projects = () => {
                   }}
                   className="h-100"
                 >
-                  <Card.Img variant="top" src={project.image} alt={project.title} />
+                  <Card.Img
+                    variant="top"
+                    src={`${import.meta.env.BASE_URL}${project.image}`}
+                    alt={project.title}
+                  />
                   <Card.Body style={{ position: 'relative', paddingBottom: '70px' }}>
                     <Card.Title>{project.title}</Card.Title>
                     <Card.Text>{project.description}</Card.Text>
@@ -104,7 +105,7 @@ const Projects = () => {
                       style={{
                         position: 'absolute',
                         bottom: '20px',
-                        left: '54%',
+                        left: '50%',
                         transform: 'translateX(-50%)',
                         width: '100%'
                       }}
@@ -139,4 +140,3 @@ const Projects = () => {
 };
 
 export default Projects;
-

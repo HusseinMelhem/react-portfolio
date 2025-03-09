@@ -61,7 +61,7 @@ const About = () => {
             viewport={{ once: true, amount: 0.5 }}
           >
             <Image
-              src="/profileimg.jpg"  // Place your image in the public folder
+               src={`${import.meta.env.BASE_URL}profileimg.jpg`}  // Place your image in the public folder
               roundedCircle
               fluid
               alt="Hussein Melhem"
