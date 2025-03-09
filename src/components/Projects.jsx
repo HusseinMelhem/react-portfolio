@@ -108,7 +108,7 @@ const Projects = () => {
                       style={{
                         position: 'absolute',
                         bottom: '20px',
-                        left: '50%',
+                        left: '56%',
                         transform: 'translateX(-50%)',
                         width: '100%'
                       }}
