@@ -52,10 +52,10 @@ function isMobileDevice() {
 const Projects = () => {
   const visibleCount = isMobileDevice() ? 1 : 4;
   const [currentIndex, setCurrentIndex] = useState(0);
-  const maxIndex = projects.length - visibleCount; // Maximum left shift index
-  const cardWidth = 100 / visibleCount; // Each card occupies a percentage width
+  const maxIndex = projects.length - visibleCount; 
+  const cardWidth = 100 / visibleCount;
 
-  // Auto slide: Update index every 3 seconds and loop back when reaching the end
+ 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex(prev => (prev >= maxIndex ? 0 : prev + 1));
@@ -63,7 +63,6 @@ const Projects = () => {
     return () => clearInterval(timer);
   }, [maxIndex]);
 
-  // Manual controls
   const handlePrev = () => {
     setCurrentIndex(prev => (prev === 0 ? maxIndex : prev - 1));
   };

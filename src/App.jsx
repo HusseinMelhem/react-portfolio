@@ -13,10 +13,9 @@ import './App.css';
 function App() {
   return (
     <div className="app-wrapper">
-      {/* Fixed background element */}
       <div className="background-wrapper"></div>
 
-      {/* Elements that should be on top */}
+   
       <Navigation />
       <SideNavbar />
 

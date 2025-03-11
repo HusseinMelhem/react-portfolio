@@ -11,7 +11,6 @@ const Contact = () => {
     e.preventDefault();
     const subject = encodeURIComponent(`Contact Form Message from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-    // Replace yourEmail@example.com with your actual email address
     window.location.href = `mailto:hussien.melhem81@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -48,7 +47,7 @@ const Contact = () => {
           />
         </Form.Group>
         <br />
-        <Button variant="light" type="submit">
+        <Button variant="dark" type="submit">
           Submit
         </Button>
       </Form>

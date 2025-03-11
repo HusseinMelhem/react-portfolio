@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import './About.css';
 
 const About = () => {
-  // Animation for the heading ("About Me")
   const titleVariant = {
     hidden: { opacity: 0, y: -20 },
     visible: { 
@@ -14,7 +13,6 @@ const About = () => {
     }
   };
 
-  // Animation for the description text with a delay
   const descriptionVariant = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -24,7 +22,6 @@ const About = () => {
     }
   };
 
-  // Animation for the image (scale fade-in)
   const imageVariant = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { 
@@ -61,7 +58,7 @@ const About = () => {
             viewport={{ once: true, amount: 0.5 }}
           >
             <Image
-               src={`${import.meta.env.BASE_URL}profileimg.jpg`}  // Place your image in the public folder
+               src={`${import.meta.env.BASE_URL}profileimg.jpg`}  
               roundedCircle
               fluid
               alt="Hussein Melhem"
