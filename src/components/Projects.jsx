@@ -3,6 +3,13 @@ import { Card, Button } from 'react-bootstrap';
 
 const projects = [
   {
+    title: 'SpringBoot And React Ecommerce',
+    description:
+      'A complete eCommerce platform built using Spring Boot and React, offering seamless product browsing, a secure shopping cart, and order tracking—all designed with scalability and modern web standards in mind.',
+    image: 'Springbootecommerce.png',
+    link: 'https://github.com/HusseinMelhem/SpringBootReactEcommerce'
+  },
+  {
     title: 'ems-with-sprinboot-and-react',
     description:
       'A comprehensive Employee Management System implemented with Spring Boot on the backend and React on the frontend, offering streamlined employee data management and efficient communication.',
@@ -44,7 +51,9 @@ const projects = [
     image: 'studentmanagment.png',
     link: 'https://github.com/HusseinMelhem/StudentManagementSystem-withMysqlImplementation'
   },
+ 
 ];
+
 function isMobileDevice() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
@@ -52,10 +61,9 @@ function isMobileDevice() {
 const Projects = () => {
   const visibleCount = isMobileDevice() ? 1 : 4;
   const [currentIndex, setCurrentIndex] = useState(0);
-  const maxIndex = projects.length - visibleCount; 
+  const maxIndex = projects.length - visibleCount;
   const cardWidth = 100 / visibleCount;
 
- 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex(prev => (prev >= maxIndex ? 0 : prev + 1));
