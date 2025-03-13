@@ -1,12 +1,81 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio repository! While having a portfolio website isn’t absolutely necessary, I believe it’s a great way to showcase your projects and skills. This repository contains the source code for my portfolio website, built with React (using Vite) and a few other modern technologies.
 
-Currently, two official plugins are available:
+If you're interested in checking out the code to boost your own skills, feel free to explore and even use it as a starting point for your own projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running Locally](#running-locally)
+- [Build for Production](#build-for-production)
+- [Usage](#usage)
+- [License](#license)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- **Portfolio Showcase:**  
+  Display a hero section, project listings, and video presentation.
+- **Responsive Design:**  
+  Works on both desktop and mobile devices.
+- **Admin Dashboard:**  
+  (Optional) Manage projects, orders, categories, etc.
+- **Integration with LinkedIn:**  
+  A clickable link to my LinkedIn profile: [LinkedIn](https://www.linkedin.com/in/husseinmelhem/)
+
+## Prerequisites
+
+Before you begin, ensure you have installed:
+
+- [Node.js (>=14)](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+## Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/your-portfolio-repo.git
+   cd your-portfolio-repo
+Install Dependencies:
+
+bash
+Copy
+npm install
+Running Locally
+To start the development server:
+
+bash
+Copy
+npm run dev
+This will launch the Vite development server (usually at http://localhost:5173). Any changes you make to the code will be hot-reloaded automatically.
+
+Build for Production
+When you’re ready to build your project for production:
+
+bash
+Copy
+npm run build
+This command creates a dist folder containing the optimized production build.
+
+You can preview the production build locally using:
+
+bash
+Copy
+npm run preview
+Usage
+Portfolio:
+The homepage displays a hero section with a brief introduction and a video overview of my work.
+Projects:
+Browse projects and click to view details.
+Admin Page:
+(For admins only) Manage projects, categories, orders, etc. (This section is restricted).
+Account:
+View your purchase history, update your details, etc.
+Note:
+For the admin functionality, ensure you log in as an admin user (role stored as 'ADMIN' in localStorage) so that admin-only routes are accessible.
+
+License
+This project is open source and available under the MIT License.
