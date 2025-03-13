@@ -17,13 +17,10 @@ If you're interested in checking out the code to boost your own skills, feel fre
 ## Features
 
 - **Portfolio Showcase:**  
-  Display a hero section, project listings, and video presentation.
+  Display a hero section, project listings, and a contacme section.
 - **Responsive Design:**  
   Works on both desktop and mobile devices.
-- **Admin Dashboard:**  
-  (Optional) Manage projects, orders, categories, etc.
-- **Integration with LinkedIn:**  
-  A clickable link to my LinkedIn profile: [LinkedIn](https://www.linkedin.com/in/husseinmelhem/)
+
 
 ## Prerequisites
 
@@ -70,12 +67,7 @@ Portfolio:
 The homepage displays a hero section with a brief introduction and a video overview of my work.
 Projects:
 Browse projects and click to view details.
-Admin Page:
-(For admins only) Manage projects, categories, orders, etc. (This section is restricted).
-Account:
-View your purchase history, update your details, etc.
-Note:
-For the admin functionality, ensure you log in as an admin user (role stored as 'ADMIN' in localStorage) so that admin-only routes are accessible.
+
 
 License
 This project is open source and available under the MIT License.
